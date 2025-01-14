@@ -1,0 +1,130 @@
+* {
+  font-family: cursive;
+}
+
+footer {
+  position: relative;
+  color: #ffffff;
+  background-color: #052608;
+  padding-top: 100px;
+}
+
+.navbar {
+  height: 110px;
+}
+
+.navbar div {
+  background-color: #c2ffc7;
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 108px;
+}
+
+.links {
+  margin-left: 15px;
+}
+.links {
+  color: #056a43;
+  font-size: larger;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+}
+
+
+
+
+@media only screen and (max-width: 660px) {
+  .heading img {
+    display: none;
+  }
+}
+
+.heading {
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+  background-color: #c2ffc7;
+  padding-bottom: 20px;
+}
+
+.heading img {
+  height: 300px; 
+  width: auto; 
+  order: 2;
+  margin-right: 66px;
+}
+
+.heading h1 {
+  font-size: x-large; 
+  margin: 0; 
+  line-height: 1.5; 
+  margin-left: 80px;
+  color: #0b8d5b;
+  
+}
+
+.languages {
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.languages a {
+  margin: 15px;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #086a44;
+}
+
+img {
+  border-radius: 10px;
+}
+
+ion-icon {
+  color: #0b8d5b;
+}
+
+.learn {
+  margin-top: 20px;
+  background-color: #fefefe;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: #0b8d5b;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.learn:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

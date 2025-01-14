@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Library</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="../Home Page/Home.css" rel="stylesheet" />
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+
+      .search-bar {
+        margin: 20px auto;
+        max-width: 800px;
+        text-align: center;
+      }
+
+      .search-bar input {
+        width: 90%;
+        max-width: 600px;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .library {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-content h3 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+        color: #056a43;
+      }
+
+      .card-content p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      h2 {
+        color: #056a43;
+        margin-top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../Home Page/Home.html"
+          ><img src="../Home Page/logo.png" alt="Logo" class="navbar-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="../Home Page/Home.html" class="links">Home</a>
+              <a href="../About_us/About.html" class="links">About us</a>
+              <a href="../Home Page/Courses.html" class="links">Courses</a>
+              <a href="../Contact us/contact.html" class="links">Contact us</a>
+              <a href="./resources.html" class="links">Resource library</a>
+              <a href="../Success stories/success.html" class="links"
+                >Success Stories</a
+              >
+              <a href="../premium/premium.html" class="links">Join Premium</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                style="font-size: larger; padding: 0px 20px"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Learn
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../Arabic/arabic.html"
+                    >Arabic</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../France/french.html"
+                    >French</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Japanese/Japanese.html"
+                    >Japanese</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Spanish/spanish.html"
+                    >Spanish</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Turkey/turkey.html"
+                    >Turkish</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        placeholder="Search resources..."
+        aria-label="Search resources"
+        oninput="searchAndScroll()"
+        id="searchInput"
+      />
+    </div>
+    <div class="library" id="content">
+      <h2>Spanish:</h2>
+      <div class="card">
+        <a
+          href="https://www.coursera.org/specializations/learn-spanish"
+          target="_blank"
+        >
+          <img src="blueCoursera.svg" alt="Resource 1"
+        /></a>
+
+        <div class="card-content">
+          <h3>Learn Spanish: Basic Spanish Vocabulary Specialization</h3>
+          <p>
+            Learn Spanish. Build a working vocabulary of 1,500 of the most used
+            words and phrases.(paid course)
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.udemy.com/course/spanish-for-beginners-the-ultimate-course-level-1/?couponCode=CMCPSALE24"
+          target="_blank"
+        >
+          <img src="udemy.png" alt="Resource 2"
+        /></a>
+        <div class="card-content">
+          <h3>Complete Spanish Course: Master Spanish Beginner to Advanced</h3>
+          <p>
+            Learn Spanish FAST with this non-stop Spanish speaking course for
+            BEGINNERS: learning Spanish will be easy and fun!(paid course)
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.kanopystreaming.com/sites/default/files/learningspanish.pdf"
+          target="_blank"
+        >
+          <img src="book.jpg" alt="Resource 3"
+        /></a>
+        <div class="card-content">
+          <h3>Book</h3>
+          <p>
+            Learning Spanish How to Understand and Speak a New Language by
+            Professor Bill Worden The University of Alabama
+          </p>
+        </div>
+      </div>
+      <h2>Japanese:</h2>
+      <div class="card">
+        <a
+          href="https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1009&context=pdxopen"
+          target="_blank"
+        >
+          <img src="book2.jpg" alt="Resource 1"
+        /></a>
+
+        <div class="card-content">
+          <h3>Book</h3>
+          <p>BEGINNING JAPANESE FOR PROFESSIONALS: BOOK 1 by Emiko Konomi</p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="
+          https://archive.org/embed/easy-japanese-learn-to-speak-japanese-quickly-pdfdrive"
+          target="_blank"
+        >
+          <img src="book3.jpg" alt="Resource 2"
+        /></a>
+        <div class="card-content">
+          <h3>Book</h3>
+          <p>
+            Easy Japanese Learn To Speak Japanese Quickly by Tuttle Publishing
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.udemy.com/course/learn-japanese-for-beginners/?couponCode=CMCPSALE24"
+          target="_blank"
+        >
+          <img src="udemy.png" alt="Resource 3"
+        /></a>
+        <div class="card-content">
+          <h3>Learn Japanese for Beginners: The Ultimate 100-Lesson Course</h3>
+          <p>
+            You learn Japanese minutes into your first lesson. Learn to speak,
+            read and write with 100 lessons by real teachers.(paid course)
+          </p>
+        </div>
+      </div>
+
+      <!-- ***** -->
+      <h2>Turkish:</h2>
+      <div class="card">
+        <a
+          href="https://archive.org/download/tomer_2021_2/TeachYourselfTurkish.pdf"
+          target="_blank"
+        >
+          <img src="book4.png" alt="Resource 1"
+        /></a>
+
+        <div class="card-content">
+          <h3>Book</h3>
+          <p>
+            Teach Yourself Turkish is a complete course for beginners by Asuman
+            Çelen Pollard , David Pollard.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.udemy.com/course/learn-turkish-beginner-to-advanced/?couponCode=CMCPSALE24"
+          target="_blank"
+        >
+          <img src="udemy.png" alt="Resource 2"
+        /></a>
+        <div class="card-content">
+          <h3>Learn Turkish - Beginner to Advanced</h3>
+          <p>
+            Learn to read, write, and speak Turkish in a matter of hours, not
+            years! (paid course)
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Turkic/Turkish%20Grammar%20(Lewis).pdf"
+          target="_blank"
+        >
+          <img src="trbook.png" alt="Resource 3"
+        /></a>
+        <div class="card-content">
+          <h3>Book</h3>
+          <p>Turkish Grammar by Geoffrey Lewis.</p>
+        </div>
+      </div>
+      <!-- ******** -->
+      <h2>Arabic:</h2>
+      <div class="card">
+        <a
+          href="https://www.udemy.com/course/arabic-language-the-complete-course-6-levels-4-courses/?couponCode=CMCPSALE24"
+          target="_blank"
+        >
+          <img src="udemy.png" alt="Resource 1"
+        /></a>
+
+        <div class="card-content">
+          <h3>Arabic Language | The Complete Course(All Levels) +6 Courses</h3>
+          <p>
+            This program is designed to take you from ZERO to MASTERING the
+            Arabic Language in 6 MONTHS through our SYSTEM.(paid course)
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.coursera.org/specializations/arabic-for-beginners"
+          target="_blank"
+        >
+          <img src="blueCoursera.svg" alt="Resource 2"
+        /></a>
+        <div class="card-content">
+          <h3>Arabic for Beginners Specialization</h3>
+          <p>
+            Learn Modern Arabic Language for Beginners. Experience the Arabic
+            culture and master beginner-intermediate level Arabic language for
+            day-to-day communications.(paid course)
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://islamicpoliticskabs.files.wordpress.com/2022/06/alif-baa-introduction-to-arabic-letters-and-sounds.-al-kitaab-fii-ta-allum-al-arabiyya-a-textbook-for-arabic-by-mahmoud-al-batal-kristen-brustad-abbas-al-tonsi.pdf"
+          target="_blank"
+        >
+          <img src="arbook.jpg" alt="Resource 3"
+        /></a>
+        <div class="card-content">
+          <h3>Book</h3>
+          <p>
+            Alif Baa Introduction to Arabic Letters and Sounds by Abbas
+            Al-Tonsi, Kristen Brustad, and Mahmoud Al-Bata.
+          </p>
+        </div>
+      </div>
+      <!-- ******** -->
+      <h2>French:</h2>
+      <div class="card">
+        <a
+          href="https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Indo-European/Italic/French%2C%20Teach%20Yourself%20(Adams%20%26%20Wilson).pdf"
+          target="_blank"
+        >
+          <img src="frbook.png" alt="Resource 1"
+        /></a>
+
+        <div class="card-content">
+          <h3>book</h3>
+          <p>French, Teach Yourself by Adams & Wilson - The Swiss Bay</p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.udemy.com/course/complete-french-course/?couponCode=CMCPSALE24"
+          target="_blank"
+        >
+          <img src="udemy.png" alt="Resource 2"
+        /></a>
+        <div class="card-content">
+          <h3>Complete French Course: Learn French for Beginners</h3>
+          <p>
+            Learn French FAST with this non-stop French speaking course for
+            BEGINNERS: learning French will be easy and fun! (paid course)
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.udemy.com/course/french-for-beginners-a1/?couponCode=CMCPSALE24"
+          target="_blank"
+        >
+          <img src="udemy.png" alt="Resource 3"
+        /></a>
+        <div class="card-content">
+          <h3>The Complete French Course : Learn French - Beginners</h3>
+          <p>
+            French Language for Beginners (A0 - A2). French speaking, listening,
+            grammar, reading, vocabulary with a native teacher. (paid course)
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="resources.js"></script>
+  </body>
+</html>
